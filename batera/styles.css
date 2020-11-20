@@ -1,0 +1,42 @@
+html, body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #333;
+    color: #ddd
+}
+
+.wrapper {
+    height: 100%;
+}
+
+.keys {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+}
+
+.key {
+    border: 2px solid white;
+    height: 70px;
+    width: 70px;
+    margin: 0 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    transition: all 0.07s;
+}
+
+.playing {
+    transform: scale(1.1);
+}
+
+kbd {
+    font-size: 40px;
+}
